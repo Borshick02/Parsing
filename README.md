@@ -2,10 +2,11 @@
 - `y_data.npy` — target vector
 
 
-Run from the project root:
+Run project 
 
 ```bash
-python app path/to/hh.csv
+python app hh.csv
+
 ```
 
 Optional: target column explicitly:
