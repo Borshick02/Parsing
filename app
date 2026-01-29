@@ -32,6 +32,19 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
+def save_predictions(pred: np.ndarray, output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    suffix = output_path.suffix.lower()
+    pred = pred.astype(float)
+
+    if suffix == ".json":
+        with output_path.open("w", encoding="utf-8") as f:
+            json.dump(pred.tolist(), f, ensure_ascii=False, indent=2)
+        return
+
+    # txt/csv: one value per line
+    np.savetxt(output_path, pred, fmt="%.6f")
 
 def main() -> None:
     args = parse_args()
