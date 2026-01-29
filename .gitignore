@@ -3,3 +3,5 @@ hh_salary_model/.venv/
 
 
 hh_salary_model/preds.json
+__pycache__/
+*.pyc
