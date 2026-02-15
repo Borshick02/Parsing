@@ -1,0 +1,37 @@
+{
+  "rows_total_after_filter": 13827,
+  "class_counts": {
+    "senior": 8327,
+    "junior": 4704,
+    "middle": 796
+  },
+  "feature_spec": {
+    "numeric": [
+      "age",
+      "salary_rub",
+      "exp_years"
+    ],
+    "categorical": [
+      "city",
+      "employment",
+      "schedule"
+    ],
+    "text": "skills_text"
+  },
+  "model_path": "/Users/angelinazolotova/Desktop/hh_chain_project/hh_it_level_classifier/resources/model.joblib",
+  "train_test_split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": true
+  },
+  "report_summary": {
+    "accuracy": 0.9295010845986985,
+    "macro_f1": 0.8439249231442113,
+    "weighted_f1": 0.9306157793812369
+  },
+  "notes": {
+    "poc_labeling": "title keywords (token-based; phrases: team lead/tech lead => senior); fallback by experience: <2 junior, 2-6 middle, >=6 senior",
+    "class_weight": "balanced",
+    "model": "LogisticRegression + TF-IDF + OneHot + numeric scaling"
+  }
+}
