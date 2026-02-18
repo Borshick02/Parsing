@@ -24,6 +24,9 @@ y_data.npy — целевая переменная (зарплата, shape: [N]
 4. **EncodeCategoricalsHandler** — one-hot encodes categorical features
 5. **SaveNpyHandler** — saves `x_data.npy` and `y_data.npy`
 
+# Regression laba
+код лежит в https://github.com/Borshick02/HH_salary.git Проект лежит в hh_salary_model/ установка зависимостей
+
 
 # HH Level Classifier 
 код лежит в https://github.com/Borshick02/hh_Classifier.git
