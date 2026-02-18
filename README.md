@@ -26,6 +26,7 @@ y_data.npy — целевая переменная (зарплата, shape: [N]
 
 
 ## Regression laba
+код лежит в https://github.com/Borshick02/HH_salary.git
 Проект лежит в hh_salary_model/
 установка зависимостей
 ```bash
@@ -47,7 +48,8 @@ hh_salary_model/resources/model.npz
 ```bash
 python app ../x_data.npy
 ```
-# HH IT Level Classifier 
+# HH Level Classifier 
+код лежит в https://github.com/Borshick02/hh_Classifier.git
 ## Что делает проект
 
 1) **Фильтрует** резюме IT-разработчиков из `hh.csv`  
