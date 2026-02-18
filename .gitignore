@@ -1,7 +1,12 @@
-hh.csv
-hh_salary_model/.venv/
-
-
-hh_salary_model/preds.json
+# python
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+.venv*/
+.env
+.DS_Store
+
+# build/packaging
+dist/
+build/
+*.egg-info/
